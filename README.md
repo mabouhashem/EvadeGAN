@@ -1,1 +1,88 @@
-# EvadeGAN
+# EvadeGAN #
+EvadeGAN is a GAN-based framework that can be trained to generate adversarial examples against ML models.
+
+EvadeGAN has been developed to target malware classifiers with binary feature space. The model used as a test case is an SVM classifier trained on the DREBIN dataset. 
+
+EvadeGAN was developed as part of a Master's project at King's Department of Informatics, titled:
+
+```
+=========================================================================================================
+│ "Using Generative Adversarial Networks to Create Evasive Feature Vectors for Malware Classification"  │ 
+│                                                                                                       │
+│ By: Mohamed Abouhashem                        ||            Supervisor: Professor Lorenzo Cavallaro   │
+=========================================================================================================
+```
+
+**Thesis:** See attached PDF file.
+
+**Five-minute presentation:** https://youtu.be/adf4uOlnMt8
+
+## EvadeGAN Architecture
+
+![alt text](https://xwrzea.am.files.1drv.com/y4mUzS0T-RYduypuSQKfx1fN-lERRjoZMV9de4OTGrMCJxoamJ0DXIYOZ1ecaQ_SjeCnva3dX5SuORmNoIPVCoZHw9H4-0PejGfPkvj0VtXPesah44gnmO9zHgwrMFBaTkQHz0NK8oEKBtWSvcDJPpfPKUFJyiGXbUJXmyqfM95TaPoyb9pol41NjimVMUVaiyIZ5aIkyuQHh5g9TWFHB7wVg/EvadeGAN_Architecture.png)
+
+
+## EvadeGAN Modes
+EvadeGAN can operate in three different modes (based on the inputs to the generator) to generate either:\
+**A) Sample-Dependent Perturbations** (in case of **EvadeGANx** and **EvadeGANxz**), OR  
+**B) Sample-Independent (Universal)** Perturbations (in case of **EvadeGANz**)  
+
+![alt text](https://pnhxsw.am.files.1drv.com/y4mZfqQ-GOUQivMTvSqrbiO34e--2yam_Hkwr6diDyjQWig2yKhezwxlqT_NXy-DIKG8hOT9M2rEjrh9aqis4zxdGkU9MftWovw2sPEN2MsGkq6lJATQ9B839lz558KwNAiINNgzTQ_99ZCQsIXgnRMGTOc8aOgjHTTJAqZbmuU1MNW6AJg6SVr1xfS0fvCI7ohKCE7zG2aSixTb5Tmo6taIw/GeneratorModes.png)
+
+A sample run of training and evaulating each mode (EvadeGANx, EvadeGANxz, and EvadeGANz) is provided as an IPython notebook. A separate notebook demonstrates several aspects about the used dataset and the target classifier.
+
+### Repo Structure. ###
+This repository is structured as follows:
+```
+├── data/    # A directory for all used & generated data
+│   ├── dataset/     # A directory for the original dataset (json) or pre-pickled shelves.
+│   ├── GAN/         # A directory for the weights & models of EvadeGAN, with subdirectories for each mode.
+│   ├── models/      # A directory for trained SVM classifiers (target models)
+│   └── plots/       # A directory for plots
+│   
+└── src/     # A directory for all source code files
+│   ├── attack.py                   # The main attack module, where the EvadeGAN class and other utility functions are defined. 
+│   ├── classifier.py               # This module defines functions for creating, training, and evaluating the target SVM classifier. 
+│   ├── data.py                     # This module defines the Data class which handles the dataset (reading, shelving, splitting, and feature selection).
+│   ├── features.py                 # This module defines functions for feature analysis.
+│   ├── globals.py                  # This module defines a few global variables & directories.
+│   ├── utilities.py                # A module with utility functions
+│   ├── test_Dataset.ipynb          # A notebook to demonstrate reading the dataset, training & evaluating the classifier, and performing basic feature analysis.
+│   ├── test_EvadeGANx.ipynb        # A notebook to demonstrate the training and evaluation of the EvadeGANx mode
+│   ├── test_EvadeGANxz.ipynb       # A notebook to demonstrate the training and evaluation of the EvadeGANxz mode
+│   └── test_EvadeGANz.ipynb        # A notebook to demonstrate the training and evaluation of the EvadeGANz mode
+│   
+└── README.md       # You are here
+```
+  
+
+#### Running the code ####
+For convenience, the code to run the different parts of the project is included in the IPython notebooks listed above.  
+Support for command-line arguments to be added soon.
+
+**Note:**  
+Provided with the code are the following:  
+1. A preprocessed shelf of the dataset (./data/dataset/).  
+In case this is not available, the code will try to read the original json files of the dataset from the same directory (which are not included due to their large size).  
+  
+2. The trained classifier that was used as a target model in the experiments (./data/models/).  
+In case this is not available, the code will train a new classifier based on the given hyperparameters, and save the trained classifier in the above directory.   
+   
+Other directories are there for the outputs of running the code.  
+
+     
+#### Dependencies ####
+The following are the main dependencies for the code to work:
+```
+python 3.6.9
+scikit-learn 0.23.1
+keras 2.4.3
+tensorflow 2.2.0
+numpy 1.18.5
+scipy 1.4.1
+pandas 1.0.5
+matplotlib 3.2.2
+seaborn 0.10.1
+joblib 0.16.0
+json 2.0.9
+```
