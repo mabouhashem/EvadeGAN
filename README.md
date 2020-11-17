@@ -29,7 +29,7 @@ EvadeGAN can operate in three different modes (based on the inputs to the genera
 
 ![alt text](https://pnhxsw.am.files.1drv.com/y4mZfqQ-GOUQivMTvSqrbiO34e--2yam_Hkwr6diDyjQWig2yKhezwxlqT_NXy-DIKG8hOT9M2rEjrh9aqis4zxdGkU9MftWovw2sPEN2MsGkq6lJATQ9B839lz558KwNAiINNgzTQ_99ZCQsIXgnRMGTOc8aOgjHTTJAqZbmuU1MNW6AJg6SVr1xfS0fvCI7ohKCE7zG2aSixTb5Tmo6taIw/GeneratorModes.png)
 
-A **sample run** of training and evaluating each mode (**EvadeGANx**, **EvadeGANxz**, and **EvadeGANz**) is provided as an **IPython notebook** in the **src** directory as shown in the repo structure below. A separate notebook demonstrates several aspects about the used dataset and the target classifier.
+A **sample run** of training and evaluating each mode (**EvadeGANx**, **EvadeGANxz**, and **EvadeGANz**) is provided as a **Jupyter notebook** in the **src** directory as shown in the repo structure below. A separate notebook demonstrates several aspects about the used dataset and the target classifier.
 
 ### Repo Structure. ###
 This repository is structured as follows:
@@ -57,7 +57,7 @@ This repository is structured as follows:
   
 
 #### Running the code ####
-For convenience, the code to run the different parts of the project is included in the IPython notebooks listed above.  
+For convenience, the code to run the different parts of the project is included in the Jupyter notebooks listed above.  
 Support for command-line arguments to be added soon.
 
 **Note:**  
