@@ -29,30 +29,31 @@ EvadeGAN can operate in three different modes (based on the inputs to the genera
 
 ![alt text](https://pnhxsw.am.files.1drv.com/y4mZfqQ-GOUQivMTvSqrbiO34e--2yam_Hkwr6diDyjQWig2yKhezwxlqT_NXy-DIKG8hOT9M2rEjrh9aqis4zxdGkU9MftWovw2sPEN2MsGkq6lJATQ9B839lz558KwNAiINNgzTQ_99ZCQsIXgnRMGTOc8aOgjHTTJAqZbmuU1MNW6AJg6SVr1xfS0fvCI7ohKCE7zG2aSixTb5Tmo6taIw/GeneratorModes.png)
 
-A **sample run** of training and evaluating each mode (**EvadeGANx**, **EvadeGANxz**, and **EvadeGANz**) is provided as a **Jupyter notebook** in the **src** directory as shown in the repo structure below. A separate notebook demonstrates several aspects about the used dataset and the target classifier.
+A **sample run** of training and evaluating each mode (**EvadeGANx**, **EvadeGANxz**, and **EvadeGANz**) is provided as a **Jupyter notebook** as shown in the repo structure below. A separate notebook demonstrates several aspects about the used dataset and the target classifier.
 
 ### Repo Structure. ###
 This repository is structured as follows:
 ```
-├── data/    # A directory for all used & generated data
-│   ├── dataset/     # A directory for the original dataset (json) or pre-pickled shelves.
-│   ├── GAN/         # A directory for the weights & models of EvadeGAN, with subdirectories for each mode.
-│   ├── models/      # A directory for trained SVM classifiers (target models)
-│   └── plots/       # A directory for plots
+├── data/       # A directory for all used & generated data
+│   ├── dataset/            # A directory for the original dataset (json) or pre-pickled shelves.
+│   ├── GAN/                # A directory for the weights & models of EvadeGAN, with subdirectories for each mode.
+│   ├── models/             # A directory for trained SVM classifiers (target models)
+│   └── plots/              # A directory for plots
 │   
-└── src/     # A directory for all source code files
+├── src/        # A directory for all source code files
 │   ├── attack.py                   # The main attack module, where the EvadeGAN class and other utility functions are defined. 
 │   ├── classifier.py               # This module defines functions for creating, training, and evaluating the target SVM classifier. 
 │   ├── data.py                     # This module defines the Data class which handles the dataset (reading, shelving, splitting, and feature selection).
 │   ├── features.py                 # This module defines functions for feature analysis.
 │   ├── globals.py                  # This module defines a few global variables & directories.
-│   ├── utilities.py                # A module with utility functions
-│   ├── test_Dataset.ipynb          # A notebook to demonstrate reading the dataset, training & evaluating the classifier, and performing basic feature analysis.
-│   ├── test_EvadeGANx.ipynb        # A notebook to demonstrate the training and evaluation of the EvadeGANx mode
-│   ├── test_EvadeGANxz.ipynb       # A notebook to demonstrate the training and evaluation of the EvadeGANxz mode
-│   └── test_EvadeGANz.ipynb        # A notebook to demonstrate the training and evaluation of the EvadeGANz mode
+│   └── utilities.py                # A module with utility functions
 │   
-└── README.md       # You are here
+├── test_Dataset.ipynb      # A notebook to demonstrate reading the dataset, training & evaluating the classifier, and performing basic feature analysis.
+├── test_EvadeGANx.ipynb    # A notebook to demonstrate the training and evaluation of the EvadeGANx mode
+├── test_EvadeGANxz.ipynb   # A notebook to demonstrate the training and evaluation of the EvadeGANxz mode
+├── test_EvadeGANz.ipynb    # A notebook to demonstrate the training and evaluation of the EvadeGANz mode
+│   
+└── README.md   # You are here
 ```
   
 
