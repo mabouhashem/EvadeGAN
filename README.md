@@ -38,10 +38,10 @@ EvadeGANx: https://nbviewer.jupyter.org/github/mabouhashem/EvadeGAN/blob/master/
 EvadeGANxz: https://nbviewer.jupyter.org/github/mabouhashem/EvadeGAN/blob/master/test_EvadeGANxz.ipynb  
 EvadeGANz: https://nbviewer.jupyter.org/github/mabouhashem/EvadeGAN/blob/master/test_EvadeGANz.ipynb  
 
-**A Peak into EvadeGAN Learning:**  
+####A Peak into EvadeGAN Learning: 
 ![EvadeGAN_Learning](https://xwspyq.am.files.1drv.com/y4mtI75AknfHCJuh0iBTiL8MXSRC93xD36Y0yjKrrw7qPYcgK7esC2OiswCQpRzLqGecxpcbS5CB0RNJOgocB0x-2u9AaTWtHc1jErxUVaFIu609ArWXkvdHAg9DokzptCK49SzIY35EvhH9whLU6I80L1_uTsUOoI64_pzt3UBnQXqqueHKY7N43v0_LkqYFh_q5ZJ7PS4AhlazjDGh922mw/EvadeGAN_Learning.png)  
 
-**Performance of EvadeGAN during 100 epochs of training:**  
+####Performance of EvadeGAN during 100 epochs of training: 
 ![EvadeGAN_Learning](https://xwtyaw.am.files.1drv.com/y4mPD2KdEY-30D1CXTqQCtolwAkHtNxJzMZd1eggoU6XeGpCxJkcXcz9GySFAgMhIV4zy-FejUnb1hcgFDKSBIPu2jUuz5kMPjkjqNokWNXUUtkg8Ot9WFRdoS1tT40MbOiiMW7ubZHuCK9J2wAC6f5DT5egW-m6aO5HGrjLjLWYuPXdII3J-9tqeUpccayyen0K8_MBg_r6mTIlUHuLaOycg/EvadeGANxz_Training_100_Epochs.png)  
 
  
