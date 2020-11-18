@@ -33,10 +33,10 @@ EvadeGAN can operate in three different modes (based on the inputs to the genera
 
 A **sample run** of training and evaluating each mode (**EvadeGANx**, **EvadeGANxz**, and **EvadeGANz**) is provided as a **Jupyter notebook** as shown in the repo structure below. A separate notebook demonstrates several aspects about the used dataset and the target classifier.  
 
-**Note**: If there is an issue with viewing the notebooks on Github, you could view them through these links:
-EvadeGANx: https://nbviewer.jupyter.org/github/mabouhashem/EvadeGAN/blob/master/test_EvadeGANx.ipynb  
-EvadeGANxz: https://nbviewer.jupyter.org/github/mabouhashem/EvadeGAN/blob/master/test_EvadeGANxz.ipynb  
-EvadeGANz: https://nbviewer.jupyter.org/github/mabouhashem/EvadeGAN/blob/master/test_EvadeGANz.ipynb  
+**Note**: If there is an issue with viewing the notebooks on Github, you could view them through these links:  
+**EvadeGANx:** https://nbviewer.jupyter.org/github/mabouhashem/EvadeGAN/blob/master/test_EvadeGANx.ipynb  
+**EvadeGANxz:** https://nbviewer.jupyter.org/github/mabouhashem/EvadeGAN/blob/master/test_EvadeGANxz.ipynb  
+**EvadeGANz:** https://nbviewer.jupyter.org/github/mabouhashem/EvadeGAN/blob/master/test_EvadeGANz.ipynb  
 
 ### A Peak into EvadeGAN Learning: ###
 
