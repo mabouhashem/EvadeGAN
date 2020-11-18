@@ -76,7 +76,7 @@ This repository is structured as follows:
 ```
   
 
-### Running the code ###
+## Running the code ##
 For convenience, the code to run the different parts of the project is included in the Jupyter notebooks listed above.  
 Support for command-line arguments to be added soon.
 
@@ -91,7 +91,7 @@ In case this is not available, the code will train a new classifier based on the
 Other directories are there for the outputs of running the code.  
 
      
-### Dependencies ###
+## Dependencies ##
 The following are the main dependencies for the code to work:
 ```
 python 3.6.9
