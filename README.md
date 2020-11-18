@@ -19,7 +19,7 @@ EvadeGAN was developed as part of a Master's project at King's Department of Inf
 
 ## EvadeGAN Architecture
 
-![alt text](https://xwrzea.am.files.1drv.com/y4mUzS0T-RYduypuSQKfx1fN-lERRjoZMV9de4OTGrMCJxoamJ0DXIYOZ1ecaQ_SjeCnva3dX5SuORmNoIPVCoZHw9H4-0PejGfPkvj0VtXPesah44gnmO9zHgwrMFBaTkQHz0NK8oEKBtWSvcDJPpfPKUFJyiGXbUJXmyqfM95TaPoyb9pol41NjimVMUVaiyIZ5aIkyuQHh5g9TWFHB7wVg/EvadeGAN_Architecture.png)
+![EvadeGAN_Architecture](https://xwrzea.am.files.1drv.com/y4mUzS0T-RYduypuSQKfx1fN-lERRjoZMV9de4OTGrMCJxoamJ0DXIYOZ1ecaQ_SjeCnva3dX5SuORmNoIPVCoZHw9H4-0PejGfPkvj0VtXPesah44gnmO9zHgwrMFBaTkQHz0NK8oEKBtWSvcDJPpfPKUFJyiGXbUJXmyqfM95TaPoyb9pol41NjimVMUVaiyIZ5aIkyuQHh5g9TWFHB7wVg/EvadeGAN_Architecture.png)
 
 
 ## EvadeGAN Modes
@@ -27,11 +27,24 @@ EvadeGAN can operate in three different modes (based on the inputs to the genera
 **A) Sample-Dependent Perturbations** (in case of **EvadeGANx** and **EvadeGANxz**), OR  
 **B) Sample-Independent (Universal)** Perturbations (in case of **EvadeGANz**)  
   
-  The input configuration for the generator in each mode is shown in this figure.  
+**The input-output configuration of the generator in each mode** is shown in this figure.  
 
-![alt text](https://pnhxsw.am.files.1drv.com/y4mZfqQ-GOUQivMTvSqrbiO34e--2yam_Hkwr6diDyjQWig2yKhezwxlqT_NXy-DIKG8hOT9M2rEjrh9aqis4zxdGkU9MftWovw2sPEN2MsGkq6lJATQ9B839lz558KwNAiINNgzTQ_99ZCQsIXgnRMGTOc8aOgjHTTJAqZbmuU1MNW6AJg6SVr1xfS0fvCI7ohKCE7zG2aSixTb5Tmo6taIw/GeneratorModes.png)
+![EvadeGAN_Modes](https://pnhxsw.am.files.1drv.com/y4mZfqQ-GOUQivMTvSqrbiO34e--2yam_Hkwr6diDyjQWig2yKhezwxlqT_NXy-DIKG8hOT9M2rEjrh9aqis4zxdGkU9MftWovw2sPEN2MsGkq6lJATQ9B839lz558KwNAiINNgzTQ_99ZCQsIXgnRMGTOc8aOgjHTTJAqZbmuU1MNW6AJg6SVr1xfS0fvCI7ohKCE7zG2aSixTb5Tmo6taIw/GeneratorModes.png)
 
-A **sample run** of training and evaluating each mode (**EvadeGANx**, **EvadeGANxz**, and **EvadeGANz**) is provided as a **Jupyter notebook** as shown in the repo structure below. A separate notebook demonstrates several aspects about the used dataset and the target classifier.
+A **sample run** of training and evaluating each mode (**EvadeGANx**, **EvadeGANxz**, and **EvadeGANz**) is provided as a **Jupyter notebook** as shown in the repo structure below. A separate notebook demonstrates several aspects about the used dataset and the target classifier.  
+
+**Note**: If there is an issue with viewing the notebooks on Github, you could view them through these links:
+EvadeGANx: https://nbviewer.jupyter.org/github/mabouhashem/EvadeGAN/blob/master/test_EvadeGANx.ipynb  
+EvadeGANxz: https://nbviewer.jupyter.org/github/mabouhashem/EvadeGAN/blob/master/test_EvadeGANxz.ipynb  
+EvadeGANz: https://nbviewer.jupyter.org/github/mabouhashem/EvadeGAN/blob/master/test_EvadeGANz.ipynb  
+
+**A Peak into EvadeGAN Learning:**  
+![EvadeGAN_Learning](https://xwspyq.am.files.1drv.com/y4mtI75AknfHCJuh0iBTiL8MXSRC93xD36Y0yjKrrw7qPYcgK7esC2OiswCQpRzLqGecxpcbS5CB0RNJOgocB0x-2u9AaTWtHc1jErxUVaFIu609ArWXkvdHAg9DokzptCK49SzIY35EvhH9whLU6I80L1_uTsUOoI64_pzt3UBnQXqqueHKY7N43v0_LkqYFh_q5ZJ7PS4AhlazjDGh922mw/EvadeGAN_Learning.png)  
+
+**Performance of EvadeGAN during 100 epochs of training:**  
+![EvadeGAN_Learning](https://xwtyaw.am.files.1drv.com/y4mPD2KdEY-30D1CXTqQCtolwAkHtNxJzMZd1eggoU6XeGpCxJkcXcz9GySFAgMhIV4zy-FejUnb1hcgFDKSBIPu2jUuz5kMPjkjqNokWNXUUtkg8Ot9WFRdoS1tT40MbOiiMW7ubZHuCK9J2wAC6f5DT5egW-m6aO5HGrjLjLWYuPXdII3J-9tqeUpccayyen0K8_MBg_r6mTIlUHuLaOycg/EvadeGANxz_Training_100_Epochs.png)  
+
+ 
 
 ### Repo Structure. ###
 This repository is structured as follows:
