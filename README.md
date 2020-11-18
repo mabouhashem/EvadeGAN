@@ -26,6 +26,8 @@ EvadeGAN was developed as part of a Master's project at King's Department of Inf
 EvadeGAN can operate in three different modes (based on the inputs to the generator) to generate either:\
 **A) Sample-Dependent Perturbations** (in case of **EvadeGANx** and **EvadeGANxz**), OR  
 **B) Sample-Independent (Universal)** Perturbations (in case of **EvadeGANz**)  
+  
+  The input configuration for the generator in each mode is shown in this figure.  
 
 ![alt text](https://pnhxsw.am.files.1drv.com/y4mZfqQ-GOUQivMTvSqrbiO34e--2yam_Hkwr6diDyjQWig2yKhezwxlqT_NXy-DIKG8hOT9M2rEjrh9aqis4zxdGkU9MftWovw2sPEN2MsGkq6lJATQ9B839lz558KwNAiINNgzTQ_99ZCQsIXgnRMGTOc8aOgjHTTJAqZbmuU1MNW6AJg6SVr1xfS0fvCI7ohKCE7zG2aSixTb5Tmo6taIw/GeneratorModes.png)
 
@@ -52,6 +54,8 @@ This repository is structured as follows:
 ├── test_EvadeGANx.ipynb    # A notebook to demonstrate the training and evaluation of the EvadeGANx mode
 ├── test_EvadeGANxz.ipynb   # A notebook to demonstrate the training and evaluation of the EvadeGANxz mode
 ├── test_EvadeGANz.ipynb    # A notebook to demonstrate the training and evaluation of the EvadeGANz mode
+│
+├── Thesis.pdf 
 │   
 └── README.md   # You are here
 ```
