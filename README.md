@@ -20,8 +20,12 @@ EvadeGAN was developed as part of a Master's project at King's Department of Inf
 ## EvadeGAN Architecture
 
 ![EvadeGAN_Architecture](https://xwrzea.am.files.1drv.com/y4mUzS0T-RYduypuSQKfx1fN-lERRjoZMV9de4OTGrMCJxoamJ0DXIYOZ1ecaQ_SjeCnva3dX5SuORmNoIPVCoZHw9H4-0PejGfPkvj0VtXPesah44gnmO9zHgwrMFBaTkQHz0NK8oEKBtWSvcDJPpfPKUFJyiGXbUJXmyqfM95TaPoyb9pol41NjimVMUVaiyIZ5aIkyuQHh5g9TWFHB7wVg/EvadeGAN_Architecture.png)
-
-
+  
+**D Loss**: 
+![DLoss](https://xwr6vw.am.files.1drv.com/y4pxX3LYV0oXAvOqnMKsRC2HKy86nIMAp_waafHfoHSnJ7s8Kpjm0Cs3n264Zl3-WLOmpRmwkfG1SfR2Sg3PIfrRV5vAUtstisD6fxL5goXWiP-92UGXj-o9crH5W72tMrCPWsH85UGr0Fkvro-8NWDFkqJnxHItJPxVaTH226xfJvgOYByRFq4bZqA1Kxf8CFc6logX8pwHQz71iSZkXtHlg/DLoss600.png)  
+**G Loss**: 
+![GLoss](https://xwrlhq.am.files.1drv.com/y4peIy854cg90Lw4MiXku5pVJc8pSr52l4se90jvwsa1n2SqWLoebF5FOzRXDaNGX-6FMPUyWYfU3rIJ9BwhUDpS0io65LbTbJ4ZYxo-CLHP7mW1700JtDf_3pqt8-08EMT6YH_QRE37mdHGVrUs628JrwoMTF7kM0b5Th0wchM0kOphk2JOiRTiQySRKqwRTuIFdDubgvCXKBN8wQqj9IFpw/GLoss600.png)
+  
 ## EvadeGAN Modes
 EvadeGAN can operate in three different modes (based on the inputs to the generator) to generate either:\
 **A) Sample-Dependent Perturbations** (in case of **EvadeGANx** and **EvadeGANxz**), OR  
