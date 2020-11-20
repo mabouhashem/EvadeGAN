@@ -22,9 +22,9 @@ EvadeGAN was developed as part of a Master's project at King's Department of Inf
 ![EvadeGAN_Architecture](https://xwrzea.am.files.1drv.com/y4mUzS0T-RYduypuSQKfx1fN-lERRjoZMV9de4OTGrMCJxoamJ0DXIYOZ1ecaQ_SjeCnva3dX5SuORmNoIPVCoZHw9H4-0PejGfPkvj0VtXPesah44gnmO9zHgwrMFBaTkQHz0NK8oEKBtWSvcDJPpfPKUFJyiGXbUJXmyqfM95TaPoyb9pol41NjimVMUVaiyIZ5aIkyuQHh5g9TWFHB7wVg/EvadeGAN_Architecture.png)
   
 **D Loss**: 
-![DLoss](https://xwr6vw.am.files.1drv.com/y4pxX3LYV0oXAvOqnMKsRC2HKy86nIMAp_waafHfoHSnJ7s8Kpjm0Cs3n264Zl3-WLOmpRmwkfG1SfR2Sg3PIfrRV5vAUtstisD6fxL5goXWiP-92UGXj-o9crH5W72tMrCPWsH85UGr0Fkvro-8NWDFkqJnxHItJPxVaTH226xfJvgOYByRFq4bZqA1Kxf8CFc6logX8pwHQz71iSZkXtHlg/DLoss600.png)  
+![DLoss](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5Clarge%20%5Cmathcal%7BL%7D_%7BG%7D%20%3D%20%5Cunderbrace%7B%5Cmathbb%7BE%7D_%7Bx%5E%5Cprime%7Cx%5E%5Cprime%20%3D%20x&plus;%5Cdelta%7D%5B%5Clog%20D%28x%5E%5Cprime%29%5D%7D_%5Ctext%7B%5Cemph%7BEvasion%20loss%7D%7D%20&plus;%20%5Cunderbrace%7B%5Calpha%20%5C%7C%20%5Cdelta%20%5C%7C_1%7D_%5Ctext%7B%5Cemph%7BInduce%20sparsity%7D%7D%20&plus;%20%5Cunderbrace%7B%5Cbeta%20%5Cmax%20%280%2C%20%5C%7Cx%5E%5Cprime%20-%20x%5C%7C_1%20-%20K%29%7D_%5Ctext%7B%5Cemph%7BEnforce%20an%20upper%20bound%7D%7D)  
 **G Loss**: 
-![GLoss](https://xwrlhq.am.files.1drv.com/y4peIy854cg90Lw4MiXku5pVJc8pSr52l4se90jvwsa1n2SqWLoebF5FOzRXDaNGX-6FMPUyWYfU3rIJ9BwhUDpS0io65LbTbJ4ZYxo-CLHP7mW1700JtDf_3pqt8-08EMT6YH_QRE37mdHGVrUs628JrwoMTF7kM0b5Th0wchM0kOphk2JOiRTiQySRKqwRTuIFdDubgvCXKBN8wQqj9IFpw/GLoss600.png)
+![GLoss](hhttps://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5Cmathcal%7BL%7D_%7BG%7D%20%3D%20%5Cunderbrace%7B%5Cmathbb%7BE%7D_%7Bx%5E%5Cprime%7Cx%5E%5Cprime%20%3D%20x&plus;%5Cdelta%7D%5B%5Clog%20D%28x%5E%5Cprime%29%5D%7D_%5Ctext%7B%5Cemph%7BEvasion%20loss%7D%7D%20&plus;%20%5Cunderbrace%7B%5Calpha%20%5C%7C%20%5Cdelta%20%5C%7C_1%7D_%5Ctext%7B%5Cemph%7BInduce%20sparsity%7D%7D%20&plus;%20%5Cunderbrace%7B%5Cbeta%20%5Cmax%20%280%2C%20%5C%7Cx%5E%5Cprime%20-%20x%5C%7C_1%20-%20K%29%7D_%5Ctext%7B%5Cemph%7BEnforce%20an%20upper%20bound%7D%7D)
   
 ## EvadeGAN Modes
 EvadeGAN can operate in three different modes (based on the inputs to the generator) to generate either:\
